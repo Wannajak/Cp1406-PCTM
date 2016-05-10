@@ -18,7 +18,7 @@ body {
                         }
                         
 
-		#container {
+		#header {
 			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 			font-size:14px;
 			color:#FFF;
@@ -26,14 +26,6 @@ body {
 			margin: auto;
 		}
 	
-		#footer {
-			position: static;
-			text-align:center;
-			background: #000;
-			color: #000;
-			bottom: 0px;
-			width:930px;
-		}
 
                 #content{
                     border: 2px;
@@ -44,12 +36,10 @@ body {
                 
                     
                 }
-                #content2{
+                #footer{
                     margin: auto;
                     width:960px;
-                    background-color:#000;
-                
-                    
+                    background-color:#000;       
                 }
                 
 .content {
@@ -63,7 +53,7 @@ body {
         
 }
 
-.content2 {
+.footer {
         margin: auto;
 	font-size:18px;
 	display:block;
@@ -74,16 +64,6 @@ body {
         
 }
 
-#tb{
-    font-style: italic;
-    font-size: 110%;
-    color:#000099;
-}
-#tb2{
-    height: 200px;
-    padding-left: 180px;
-    
-}
 nav ul ul {
 	display: none;
 	width: 195px;
@@ -157,3 +137,59 @@ nav ul ul ul {
 	top:0;
 }
 
+/*----- Tabs -----*/
+.tabs {
+    width:70%;
+    margin:auto;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
