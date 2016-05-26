@@ -24,13 +24,62 @@ body {
     max-width: 400px;
     max-height: 400px;
     text-align: center;
-}    
+}
+#ppic{
+    width: 800px;
+    max-height: 400px;
+    text-align: center;
+}
+#tt{
+    text-align: center;
+}
+#tp{
+    max-width: 200px;
+    height: 200px;
+}
+#tc{
+    max-width: 800px;
+    height: 200px;
+}
+#ts{
+    width: 30px;
+    height: 30px;
+}
+.ta{
+    max-width: 1000px;
+}
+#to{
+    width: 300px;
+}
+#pp{
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
 #spon{
     max-height: 100%;
     max-width: 100%;
     margin: auto;
 }
-                
+#labe{
+    border: 2px;
+    border-radius: 15px;
+    margin: auto;
+    max-width:360px;
+    height: auto;
+    background-color:#FFF;  
+}               
+.labe {
+        margin: auto;
+	font-size:1em;
+	display:block;
+	padding-bottom: 20px;
+	color:#000;
+	text-align:justify;
+	max-width:330px;
+        height: auto;
+        
+}              
 #content{
     border: 2px;
     border-radius: 15px;
@@ -76,17 +125,22 @@ body {
 
     border: 1px;
     text-align: center;
+    margin: auto;
+    max-width: 770px;
+    padding-bottom: 30px;
     
 }
 /*Strip the ul of padding and list styling*/
-ul #menu{
+#menu ul {
 	list-style-type:none;
-	position:initial;
+	margin:0;
+	padding:0;
+	position: absolute;
 }
-
 /*Create a horizontal list with spacing*/
-#menu li {
+li {
 	display:inline-block;
+        float: left;
 	margin: auto;
         
 }
@@ -124,25 +178,25 @@ ul #menu{
 }
 
 /*Hide dropdown links until they are needed*/
-#menu li ul {
+li ul {
 	display: none;
 }
 
 /*Make dropdown links vertical*/
-#menu li ul li {
+li ul li {
 	display: block;
 	float: none;
 }
 
 /*Prevent text wrapping*/
-#menu li ul li a {
+li ul li a {
 	width: auto;
-	min-width: 100px;
-	padding: 0 20px;
+	min-width: 0px;
+	padding: 0 0px;
 }
 
 /*Display the dropdown on hover*/
-#menu ul li a:hover + .hidden, #menu .hidden:hover {
+ ul li a:hover + .hidden,  .hidden:hover {
 	display: block;
 }
 

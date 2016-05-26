@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+document.write(' </br>');
 document.write(' <div id="footer"> ');
 document.write(' <div class="footer"> ');
 document.write(' <fieldset> ');
